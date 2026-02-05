@@ -3,343 +3,393 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="أعمال سوفت سكوب - استكشف مشاريعنا الناجحة في التقنية المالية والرعاية الصحية واللوجستيات والمزيد. شاهد كيف ساعدنا الشركات في التحول الرقمي.">
+    <meta name="description" content="أعمال سوفت سكوب - استكشف مشاريعنا الناجحة في التقنية المالية والرعاية الصحية واللوجستيات والمزيد.">
     <title>أعمالنا | سوفت سكوب</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS RTL -->
+    <!-- Bootstrap RTL CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#E60000',
-                        'primary-dark': '#B80000',
-                        dark: '#0F0F0F',
-                        'gray-light': '#F7F7F7',
-                    },
-                    fontFamily: {
-                        heading: ['Cairo', 'sans-serif'],
-                        body: ['Cairo', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-    <style>
-        body { font-family: 'Cairo', sans-serif; }
-        .rtl-flip { transform: scaleX(-1); }
-    </style>
 </head>
 <body class="rtl">
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <img src="../images/logo.png" alt="سوفت سكوب" class="preloader-logo">
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm" id="mainNavbar">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-premium" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="../images/logo.png" alt="سوفت سكوب" height="40">
+                <img src="../images/logo.png" alt="سوفت سكوب" height="45">
             </a>
+
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto gap-lg-4">
-                    <li class="nav-item"><a class="nav-link fw-medium" href="index.html">الرئيسية</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="services.html">خدماتنا</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="about.html">من نحن</a></li>
-                    <li class="nav-item"><a class="nav-link active fw-medium" href="portfolio.html">أعمالنا</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="contact.html">تواصل معنا</a></li>
+                <ul class="navbar-nav mx-auto gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">أعمالنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">تواصل معنا</a>
+                    </li>
                 </ul>
+
                 <div class="d-flex align-items-center gap-3">
-                    <a href="../en/portfolio.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">English</a>
-                    <a href="contact.html" class="btn btn-primary rounded-pill px-4">ابدأ الآن</a>
+                    <a href="../en/portfolio.html" class="btn btn-sm btn-outline-light rounded-pill px-3">English</a>
+                    <a href="contact.html" class="btn-premium">
+                        ابدأ الآن <i class="bi bi-arrow-left"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="py-5" style="padding-top: 140px; padding-bottom: 80px; background: linear-gradient(135deg, #0F0F0F 0%, #1a1a1a 100%);">
-        <div class="container">
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <!-- Background Video -->
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-presentation-of-multiple-application-screen-flows-43802-large.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Animated Shapes -->
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <!-- Particles -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="container page-hero-content">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-8">
-                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-4">أعمالنا</span>
-                    <h1 class="display-4 fw-bold text-white mb-4">مشاريع تُحدث فرقاً</h1>
-                    <p class="lead text-white text-opacity-75">
+                    <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">
+                        <div class="pulse-dot"></div>
+                        <span>أعمالنا</span>
+                    </div>
+                    <h1 class="page-hero-title" data-aos="fade-up" data-aos-delay="200">
+                        مشاريع تُحدث <span class="gradient-text">فرقاً حقيقياً</span>
+                    </h1>
+                    <p class="page-hero-subtitle" data-aos="fade-up" data-aos-delay="300">
                         استكشف معرض أعمالنا من المشاريع الناجحة عبر مختلف الصناعات. كل مشروع يمثل التزامنا بالتميز ورضا العملاء.
                     </p>
                 </div>
             </div>
         </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>تصفح</span>
+            <div class="scroll-mouse"></div>
+        </div>
     </section>
 
     <!-- Portfolio Filter & Grid -->
-    <section class="py-5" style="padding-top: 80px; padding-bottom: 100px;">
+    <section class="section-premium section-light">
         <div class="container">
             <!-- Filter Buttons -->
-            <div class="d-flex flex-wrap justify-content-center gap-2 mb-5" id="portfolioFilters">
-                <button class="btn btn-primary rounded-pill px-4 active" data-filter="all">جميع المشاريع</button>
-                <button class="btn btn-outline-secondary rounded-pill px-4" data-filter="fintech">التقنية المالية</button>
-                <button class="btn btn-outline-secondary rounded-pill px-4" data-filter="healthcare">الرعاية الصحية</button>
-                <button class="btn btn-outline-secondary rounded-pill px-4" data-filter="logistics">اللوجستيات</button>
-                <button class="btn btn-outline-secondary rounded-pill px-4" data-filter="retail">التجزئة</button>
-                <button class="btn btn-outline-secondary rounded-pill px-4" data-filter="government">الحكومة</button>
+            <div class="portfolio-filters" data-aos="fade-up" id="portfolioFilters">
+                <button class="filter-btn active" data-filter="all">جميع المشاريع</button>
+                <button class="filter-btn" data-filter="fintech">التقنية المالية</button>
+                <button class="filter-btn" data-filter="healthcare">الرعاية الصحية</button>
+                <button class="filter-btn" data-filter="logistics">اللوجستيات</button>
+                <button class="filter-btn" data-filter="retail">التجزئة</button>
+                <button class="filter-btn" data-filter="government">الحكومة</button>
             </div>
 
             <!-- Portfolio Grid -->
             <div class="row g-4" id="portfolioGrid">
                 <!-- Project 1 - FinTech -->
-                <div class="col-md-6 col-lg-4 portfolio-item" data-category="fintech">
-                    <div class="card border-0 shadow-sm overflow-hidden hover-lift h-100">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=300&fit=crop"
-                                 alt="منصة مصرفية رقمية"
-                                 class="card-img-top">
-                            <div class="position-absolute top-0 start-0 m-3">
-                                <span class="badge bg-primary">التقنية المالية</span>
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="fintech" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-card-premium">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500&h=350&fit=crop" alt="منصة مصرفية رقمية">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <span class="portfolio-category">التقنية المالية</span>
+                                    <h5>منصة مصرفية رقمية</h5>
+                                    <p>حل مصرفي متكامل لمؤسسة مالية خليجية</p>
+                                    <a href="#" class="portfolio-link">
+                                        عرض دراسة الحالة <i class="bi bi-arrow-left"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body p-4">
-                            <h5 class="card-title fw-bold mb-2">منصة مصرفية رقمية</h5>
-                            <p class="card-text text-muted mb-3">
-                                حل مصرفي رقمي متكامل مع تطبيق جوال وبوابة ويب وأنظمة خلفية لبنك خليجي رائد.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge bg-light text-dark">React Native</span>
-                                <span class="badge bg-light text-dark">Node.js</span>
-                                <span class="badge bg-light text-dark">AWS</span>
-                            </div>
-                            <div class="border-top pt-3 mt-3">
-                                <div class="row text-center">
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">+500 ألف</h6>
-                                        <small class="text-muted">مستخدم</small>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">40%</h6>
-                                        <small class="text-muted">تخفيض التكلفة</small>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">99.9%</h6>
-                                        <small class="text-muted">وقت التشغيل</small>
-                                    </div>
+                        <div class="portfolio-body">
+                            <span class="portfolio-category">التقنية المالية</span>
+                            <h5>منصة مصرفية رقمية</h5>
+                            <p>حل مصرفي رقمي متكامل مع تطبيق جوال وبوابة ويب.</p>
+                            <div class="portfolio-stats">
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">+500 ألف</span>
+                                    <span class="portfolio-stat-label">مستخدم</span>
                                 </div>
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">40%</span>
+                                    <span class="portfolio-stat-label">تخفيض التكلفة</span>
+                                </div>
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">99.9%</span>
+                                    <span class="portfolio-stat-label">وقت التشغيل</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-tech">
+                                <span>React Native</span>
+                                <span>Node.js</span>
+                                <span>AWS</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 - Healthcare -->
-                <div class="col-md-6 col-lg-4 portfolio-item" data-category="healthcare">
-                    <div class="card border-0 shadow-sm overflow-hidden hover-lift h-100">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=300&fit=crop"
-                                 alt="نظام إدارة الرعاية الصحية"
-                                 class="card-img-top">
-                            <div class="position-absolute top-0 start-0 m-3">
-                                <span class="badge bg-primary">الرعاية الصحية</span>
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="healthcare" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-card-premium">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500&h=350&fit=crop" alt="نظام إدارة الرعاية الصحية">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <span class="portfolio-category">الرعاية الصحية</span>
+                                    <h5>نظام إدارة الرعاية الصحية</h5>
+                                    <p>منصة طب عن بُعد وإدارة المرضى</p>
+                                    <a href="#" class="portfolio-link">
+                                        عرض دراسة الحالة <i class="bi bi-arrow-left"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body p-4">
-                            <h5 class="card-title fw-bold mb-2">نظام إدارة الرعاية الصحية</h5>
-                            <p class="card-text text-muted mb-3">
-                                منصة متكاملة لإدارة المرضى والطب عن بُعد وجدولة المواعيد لشبكة مستشفيات.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge bg-light text-dark">Python</span>
-                                <span class="badge bg-light text-dark">React</span>
-                                <span class="badge bg-light text-dark">PostgreSQL</span>
-                            </div>
-                            <div class="border-top pt-3 mt-3">
-                                <div class="row text-center">
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">15</h6>
-                                        <small class="text-muted">مستشفى</small>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">60%</h6>
-                                        <small class="text-muted">حجوزات أسرع</small>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">+1 مليون</h6>
-                                        <small class="text-muted">مريض</small>
-                                    </div>
+                        <div class="portfolio-body">
+                            <span class="portfolio-category">الرعاية الصحية</span>
+                            <h5>نظام إدارة الرعاية الصحية</h5>
+                            <p>منصة متكاملة لإدارة المرضى والطب عن بُعد.</p>
+                            <div class="portfolio-stats">
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">15</span>
+                                    <span class="portfolio-stat-label">مستشفى</span>
                                 </div>
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">60%</span>
+                                    <span class="portfolio-stat-label">أسرع</span>
+                                </div>
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">+1 مليون</span>
+                                    <span class="portfolio-stat-label">مريض</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-tech">
+                                <span>Python</span>
+                                <span>React</span>
+                                <span>PostgreSQL</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 3 - Logistics -->
-                <div class="col-md-6 col-lg-4 portfolio-item" data-category="logistics">
-                    <div class="card border-0 shadow-sm overflow-hidden hover-lift h-100">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop"
-                                 alt="منصة لوجستية ذكية"
-                                 class="card-img-top">
-                            <div class="position-absolute top-0 start-0 m-3">
-                                <span class="badge bg-primary">اللوجستيات</span>
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="logistics" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-card-premium">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&h=350&fit=crop" alt="منصة لوجستية ذكية">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <span class="portfolio-category">اللوجستيات</span>
+                                    <h5>منصة لوجستية ذكية</h5>
+                                    <p>نظام إدارة أسطول مدعوم بالذكاء الاصطناعي</p>
+                                    <a href="#" class="portfolio-link">
+                                        عرض دراسة الحالة <i class="bi bi-arrow-left"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body p-4">
-                            <h5 class="card-title fw-bold mb-2">منصة لوجستية ذكية</h5>
-                            <p class="card-text text-muted mb-3">
-                                نظام إدارة أسطول وتحسين لوجستي مدعوم بالذكاء الاصطناعي مع تتبع وتحليلات فورية.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge bg-light text-dark">Python</span>
-                                <span class="badge bg-light text-dark">TensorFlow</span>
-                                <span class="badge bg-light text-dark">IoT</span>
-                            </div>
-                            <div class="border-top pt-3 mt-3">
-                                <div class="row text-center">
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">+5000</h6>
-                                        <small class="text-muted">مركبة</small>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">25%</h6>
-                                        <small class="text-muted">توفير الوقود</small>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">فوري</h6>
-                                        <small class="text-muted">تتبع</small>
-                                    </div>
+                        <div class="portfolio-body">
+                            <span class="portfolio-category">اللوجستيات</span>
+                            <h5>منصة لوجستية ذكية</h5>
+                            <p>إدارة أسطول مدعومة بالذكاء الاصطناعي مع تتبع فوري.</p>
+                            <div class="portfolio-stats">
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">+5000</span>
+                                    <span class="portfolio-stat-label">مركبة</span>
                                 </div>
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">25%</span>
+                                    <span class="portfolio-stat-label">توفير الوقود</span>
+                                </div>
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">فوري</span>
+                                    <span class="portfolio-stat-label">تتبع</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-tech">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>IoT</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 4 - Retail -->
-                <div class="col-md-6 col-lg-4 portfolio-item" data-category="retail">
-                    <div class="card border-0 shadow-sm overflow-hidden hover-lift h-100">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&h=300&fit=crop"
-                                 alt="منصة تجارة إلكترونية"
-                                 class="card-img-top">
-                            <div class="position-absolute top-0 start-0 m-3">
-                                <span class="badge bg-primary">التجزئة</span>
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="retail" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-card-premium">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=500&h=350&fit=crop" alt="منصة تجارة إلكترونية">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <span class="portfolio-category">التجزئة</span>
+                                    <h5>سوق متعدد البائعين</h5>
+                                    <p>منصة سوق قابلة للتوسع</p>
+                                    <a href="#" class="portfolio-link">
+                                        عرض دراسة الحالة <i class="bi bi-arrow-left"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body p-4">
-                            <h5 class="card-title fw-bold mb-2">سوق متعدد البائعين</h5>
-                            <p class="card-text text-muted mb-3">
-                                منصة سوق قابلة للتوسع تدعم بائعين متعددين مع أنظمة دفع وتوصيل متكاملة.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge bg-light text-dark">Next.js</span>
-                                <span class="badge bg-light text-dark">Stripe</span>
-                                <span class="badge bg-light text-dark">MongoDB</span>
-                            </div>
-                            <div class="border-top pt-3 mt-3">
-                                <div class="row text-center">
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">+200</h6>
-                                        <small class="text-muted">بائع</small>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">$10M+</h6>
-                                        <small class="text-muted">GMV</small>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">+50 ألف</h6>
-                                        <small class="text-muted">منتج</small>
-                                    </div>
+                        <div class="portfolio-body">
+                            <span class="portfolio-category">التجزئة</span>
+                            <h5>سوق متعدد البائعين</h5>
+                            <p>سوق قابل للتوسع مع أنظمة دفع وتوصيل متكاملة.</p>
+                            <div class="portfolio-stats">
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">+200</span>
+                                    <span class="portfolio-stat-label">بائع</span>
                                 </div>
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">$10M+</span>
+                                    <span class="portfolio-stat-label">GMV</span>
+                                </div>
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">+50 ألف</span>
+                                    <span class="portfolio-stat-label">منتج</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-tech">
+                                <span>Next.js</span>
+                                <span>Stripe</span>
+                                <span>MongoDB</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 5 - Government -->
-                <div class="col-md-6 col-lg-4 portfolio-item" data-category="government">
-                    <div class="card border-0 shadow-sm overflow-hidden hover-lift h-100">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?w=400&h=300&fit=crop"
-                                 alt="بوابة الخدمات الحكومية"
-                                 class="card-img-top">
-                            <div class="position-absolute top-0 start-0 m-3">
-                                <span class="badge bg-primary">الحكومة</span>
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="government" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-card-premium">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?w=500&h=350&fit=crop" alt="بوابة الخدمات الحكومية">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <span class="portfolio-category">الحكومة</span>
+                                    <h5>بوابة الحكومة الإلكترونية</h5>
+                                    <p>منصة خدمات مواطنين موحدة</p>
+                                    <a href="#" class="portfolio-link">
+                                        عرض دراسة الحالة <i class="bi bi-arrow-left"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body p-4">
-                            <h5 class="card-title fw-bold mb-2">بوابة الحكومة الإلكترونية</h5>
-                            <p class="card-text text-muted mb-3">
-                                بوابة خدمات حكومية موحدة تمكن المواطنين من الوصول إلى أكثر من 100 خدمة عبر الإنترنت مع هوية رقمية.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge bg-light text-dark">Java</span>
-                                <span class="badge bg-light text-dark">Angular</span>
-                                <span class="badge bg-light text-dark">Oracle</span>
-                            </div>
-                            <div class="border-top pt-3 mt-3">
-                                <div class="row text-center">
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">+100</h6>
-                                        <small class="text-muted">خدمة</small>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">+2 مليون</h6>
-                                        <small class="text-muted">مواطن</small>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">24/7</h6>
-                                        <small class="text-muted">متاح</small>
-                                    </div>
+                        <div class="portfolio-body">
+                            <span class="portfolio-category">الحكومة</span>
+                            <h5>بوابة الحكومة الإلكترونية</h5>
+                            <p>بوابة موحدة لأكثر من 100 خدمة حكومية.</p>
+                            <div class="portfolio-stats">
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">+100</span>
+                                    <span class="portfolio-stat-label">خدمة</span>
                                 </div>
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">+2 مليون</span>
+                                    <span class="portfolio-stat-label">مواطن</span>
+                                </div>
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">24/7</span>
+                                    <span class="portfolio-stat-label">متاح</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-tech">
+                                <span>Java</span>
+                                <span>Angular</span>
+                                <span>Oracle</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 6 - FinTech -->
-                <div class="col-md-6 col-lg-4 portfolio-item" data-category="fintech">
-                    <div class="card border-0 shadow-sm overflow-hidden hover-lift h-100">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
-                                 alt="بوابة الدفع"
-                                 class="card-img-top">
-                            <div class="position-absolute top-0 start-0 m-3">
-                                <span class="badge bg-primary">التقنية المالية</span>
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="fintech" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-card-premium">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=350&fit=crop" alt="بوابة الدفع">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-content">
+                                    <span class="portfolio-category">التقنية المالية</span>
+                                    <h5>بوابة دفع إقليمية</h5>
+                                    <p>معالجة مدفوعات متوافقة مع PCI-DSS</p>
+                                    <a href="#" class="portfolio-link">
+                                        عرض دراسة الحالة <i class="bi bi-arrow-left"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body p-4">
-                            <h5 class="card-title fw-bold mb-2">بوابة دفع إقليمية</h5>
-                            <p class="card-text text-muted mb-3">
-                                حل معالجة مدفوعات متوافق مع PCI-DSS يدعم طرق الدفع المحلية والدولية.
-                            </p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge bg-light text-dark">Go</span>
-                                <span class="badge bg-light text-dark">Kubernetes</span>
-                                <span class="badge bg-light text-dark">Redis</span>
-                            </div>
-                            <div class="border-top pt-3 mt-3">
-                                <div class="row text-center">
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">$500M+</h6>
-                                        <small class="text-muted">معالج</small>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">99.99%</h6>
-                                        <small class="text-muted">وقت التشغيل</small>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="text-primary fw-bold mb-0">< 100ms</h6>
-                                        <small class="text-muted">استجابة</small>
-                                    </div>
+                        <div class="portfolio-body">
+                            <span class="portfolio-category">التقنية المالية</span>
+                            <h5>بوابة دفع إقليمية</h5>
+                            <p>معالجة مدفوعات آمنة لطرق الدفع المحلية والدولية.</p>
+                            <div class="portfolio-stats">
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">$500M+</span>
+                                    <span class="portfolio-stat-label">معالج</span>
                                 </div>
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">99.99%</span>
+                                    <span class="portfolio-stat-label">وقت التشغيل</span>
+                                </div>
+                                <div class="portfolio-stat">
+                                    <span class="portfolio-stat-value">&lt;100ms</span>
+                                    <span class="portfolio-stat-label">استجابة</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-tech">
+                                <span>Go</span>
+                                <span>Kubernetes</span>
+                                <span>Redis</span>
                             </div>
                         </div>
                     </div>
@@ -349,118 +399,246 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-5" style="padding-top: 80px; padding-bottom: 80px; background-color: #F7F7F7;">
+    <section class="stats-premium">
+        <div class="container position-relative">
+            <div class="row g-4">
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-item-premium">
+                        <div class="stat-number">+150</div>
+                        <div class="stat-label">مشروع منجز</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item-premium">
+                        <div class="stat-number">+50</div>
+                        <div class="stat-label">عميل مؤسسي</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item-premium">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">رضا العملاء</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item-premium">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">دول نخدمها</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="section-premium section-dark">
         <div class="container">
-            <div class="row g-4 text-center">
-                <div class="col-6 col-lg-3">
-                    <h2 class="display-4 fw-bold text-primary mb-2">+150</h2>
-                    <p class="text-muted fw-medium">مشروع منجز</p>
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="bi bi-circle-fill"></i>
+                    القطاعات
                 </div>
-                <div class="col-6 col-lg-3">
-                    <h2 class="display-4 fw-bold text-primary mb-2">+50</h2>
-                    <p class="text-muted fw-medium">عميل مؤسسي</p>
+                <h2 class="section-title text-white">القطاعات التي نخدمها</h2>
+                <p class="section-subtitle">
+                    لدينا خبرة عميقة عبر صناعات متعددة، نقدم حلولاً مخصصة لكل قطاع.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="bi bi-bank"></i>
+                        </div>
+                        <h5>البنوك والتمويل</h5>
+                        <p>الخدمات المصرفية الرقمية وحلول الدفع وتطبيقات التقنية المالية.</p>
+                    </div>
                 </div>
-                <div class="col-6 col-lg-3">
-                    <h2 class="display-4 fw-bold text-primary mb-2">98%</h2>
-                    <p class="text-muted fw-medium">رضا العملاء</p>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="bi bi-heart-pulse"></i>
+                        </div>
+                        <h5>الرعاية الصحية</h5>
+                        <p>إدارة المرضى والطب عن بُعد وأنظمة المعلومات الصحية.</p>
+                    </div>
                 </div>
-                <div class="col-6 col-lg-3">
-                    <h2 class="display-4 fw-bold text-primary mb-2">6</h2>
-                    <p class="text-muted fw-medium">دول تم خدمتها</p>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <h5>اللوجستيات وسلسلة التوريد</h5>
+                        <p>إدارة الأسطول والتتبع وتحسين سلسلة التوريد.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="bi bi-shop"></i>
+                        </div>
+                        <h5>التجزئة والتجارة الإلكترونية</h5>
+                        <p>المتاجر الإلكترونية ومنصات الأسواق وإدارة البيع بالتجزئة.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <h5>الحكومة</h5>
+                        <p>بوابات الحكومة الإلكترونية وخدمات المواطنين والإدارة العامة.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <h5>التعليم</h5>
+                        <p>أنظمة إدارة التعلم والمنصات التعليمية.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-5 position-relative overflow-hidden" style="padding-top: 100px; padding-bottom: 100px; background: linear-gradient(135deg, #E60000 0%, #B80000 100%);">
-        <div class="container position-relative" style="z-index: 10;">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="display-5 fw-bold text-white mb-4">لديك مشروع في ذهنك؟</h2>
-                    <p class="lead text-white text-opacity-75 mb-5">
-                        دعنا نناقش كيف يمكننا تحويل رؤيتك إلى واقع بخبرتنا وسجلنا الحافل بالنجاح.
-                    </p>
-                    <a href="contact.html" class="btn btn-white btn-lg rounded-pill px-5 py-3">
-                        ابدأ مشروعك <i class="bi bi-arrow-left ms-2 rtl-flip"></i>
+    <section class="cta-premium">
+        <div class="cta-shapes">
+            <div class="cta-shape cta-shape-1"></div>
+            <div class="cta-shape cta-shape-2"></div>
+            <div class="cta-shape cta-shape-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">لديك مشروع في ذهنك؟</h2>
+                <p class="cta-text">
+                    دعنا نناقش كيف يمكننا تحويل رؤيتك إلى واقع بخبرتنا وسجلنا الحافل بالنجاح.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-white-premium">
+                        ابدأ مشروعك <i class="bi bi-arrow-left"></i>
+                    </a>
+                    <a href="tel:+971000000000" class="btn-premium-outline">
+                        <i class="bi bi-telephone me-2"></i> اتصل بنا الآن
                     </a>
                 </div>
             </div>
         </div>
-        <div class="position-absolute" style="top: -50px; left: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
-        <div class="position-absolute" style="bottom: -100px; right: -100px; width: 300px; height: 300px; background: rgba(255,255,255,0.05); border-radius: 50%;"></div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row g-4 mb-5">
-                <div class="col-lg-4">
-                    <img src="../images/logo.png" alt="سوفت سكوب" height="40" class="mb-4" style="filter: brightness(0) invert(1);">
-                    <p class="text-white text-opacity-75 mb-4">
-                        حلول برمجية للمؤسسات مصممة لسوق الخليج. نحول الأعمال من خلال التكنولوجيا المبتكرة.
-                    </p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-white text-opacity-50 fs-5"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="text-white text-opacity-50 fs-5"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="text-white text-opacity-50 fs-5"><i class="bi bi-instagram"></i></a>
+    <footer class="footer-premium">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <img src="../images/logo.png" alt="سوفت سكوب" class="footer-logo">
+                        <p class="footer-text">
+                            حلول برمجية مؤسسية مصممة لسوق الخليج. نحوّل الأعمال من خلال التكنولوجيا المبتكرة والشراكة المخلصة.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h6 class="footer-title">روابط سريعة</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="services.html">خدماتنا</a></li>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="portfolio.html">أعمالنا</a></li>
+                            <li><a href="contact.html">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h6 class="footer-title">الخدمات</h6>
+                        <ul class="footer-links">
+                            <li><a href="services.html">البرمجيات المخصصة</a></li>
+                            <li><a href="services.html">تطبيقات الجوال</a></li>
+                            <li><a href="services.html">الحلول السحابية</a></li>
+                            <li><a href="services.html">الاستشارات</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h6 class="footer-title">تواصل معنا</h6>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>الخليج التجاري، دبي<br>الإمارات العربية المتحدة</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:info@softscope.ae">info@softscope.ae</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+971000000000">+971 00 000 0000</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-whatsapp"></i>
+                            <a href="https://wa.me/971000000000">واتساب</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-lg-2">
-                    <h6 class="fw-bold mb-4">روابط سريعة</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html" class="text-white text-opacity-50 text-decoration-none">الرئيسية</a></li>
-                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">خدماتنا</a></li>
-                        <li class="mb-2"><a href="about.html" class="text-white text-opacity-50 text-decoration-none">من نحن</a></li>
-                        <li class="mb-2"><a href="portfolio.html" class="text-white text-opacity-50 text-decoration-none">أعمالنا</a></li>
-                        <li class="mb-2"><a href="contact.html" class="text-white text-opacity-50 text-decoration-none">تواصل معنا</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2">
-                    <h6 class="fw-bold mb-4">الخدمات</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">تطوير البرمجيات</a></li>
-                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">تطبيقات الجوال</a></li>
-                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">الحلول السحابية</a></li>
-                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">الاستشارات</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <h6 class="fw-bold mb-4">تواصل معنا</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb-3 d-flex gap-3">
-                            <i class="bi bi-geo-alt text-primary"></i>
-                            <span class="text-white text-opacity-50">دبي، الإمارات العربية المتحدة</span>
-                        </li>
-                        <li class="mb-3 d-flex gap-3">
-                            <i class="bi bi-envelope text-primary"></i>
-                            <a href="mailto:info@softscope.ae" class="text-white text-opacity-50 text-decoration-none">info@softscope.ae</a>
-                        </li>
-                        <li class="mb-3 d-flex gap-3">
-                            <i class="bi bi-telephone text-primary"></i>
-                            <a href="tel:+971000000000" class="text-white text-opacity-50 text-decoration-none">+971 00 000 0000</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <hr class="border-white border-opacity-10">
-            <div class="row align-items-center pt-3">
-                <div class="col-md-6">
-                    <p class="text-white text-opacity-50 mb-0 small">&copy; 2024 سوفت سكوب. جميع الحقوق محفوظة.</p>
-                </div>
-                <div class="col-md-6 text-md-start">
-                    <a href="#" class="text-white text-opacity-50 text-decoration-none small me-3">سياسة الخصوصية</a>
-                    <a href="#" class="text-white text-opacity-50 text-decoration-none small">شروط الخدمة</a>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="footer-copyright mb-0">
+                            &copy; 2024 سوفت سكوب. جميع الحقوق محفوظة.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-md-start">
+                        <a href="#" class="footer-copyright ms-3">سياسة الخصوصية</a>
+                        <a href="#" class="footer-copyright">شروط الخدمة</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
     <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('preloader').classList.add('loaded');
+            }, 500);
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+
         // Navbar scroll effect
+        const navbar = document.getElementById('mainNavbar');
         window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('mainNavbar');
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
@@ -470,27 +648,34 @@
 
         // Portfolio filter
         document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('#portfolioFilters button');
+            const filterButtons = document.querySelectorAll('#portfolioFilters .filter-btn');
             const portfolioItems = document.querySelectorAll('.portfolio-item');
 
             filterButtons.forEach(button => {
                 button.addEventListener('click', function() {
-                    filterButtons.forEach(btn => {
-                        btn.classList.remove('btn-primary', 'active');
-                        btn.classList.add('btn-outline-secondary');
-                    });
-                    this.classList.remove('btn-outline-secondary');
-                    this.classList.add('btn-primary', 'active');
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
 
+                    // Filter items
                     const filter = this.dataset.filter;
                     portfolioItems.forEach(item => {
                         if (filter === 'all' || item.dataset.category === filter) {
                             item.style.display = 'block';
+                            item.style.animation = 'fadeInUp 0.5s ease forwards';
                         } else {
                             item.style.display = 'none';
                         }
                     });
                 });
+            });
+        });
+
+        // Scroll indicator
+        document.querySelector('.scroll-indicator')?.addEventListener('click', function() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
             });
         });
     </script>

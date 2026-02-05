@@ -3,113 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="من نحن - سوفت سكوب شريكك الموثوق في تطوير البرمجيات في منطقة الخليج. تعرف على قصتنا ورسالتنا والفريق وراء نجاحنا.">
+    <meta name="description" content="عن سوفت سكوب - شريكك الموثوق في تطوير البرمجيات في منطقة الخليج. تعرف على قصتنا ورسالتنا والفريق وراء نجاحنا.">
     <title>من نحن | سوفت سكوب</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS RTL -->
+    <!-- Bootstrap RTL CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#E60000',
-                        'primary-dark': '#B80000',
-                        dark: '#0F0F0F',
-                        'gray-light': '#F7F7F7',
-                    },
-                    fontFamily: {
-                        heading: ['Cairo', 'sans-serif'],
-                        body: ['Cairo', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-    <style>
-        body { font-family: 'Cairo', sans-serif; }
-        .rtl-flip { transform: scaleX(-1); }
-    </style>
 </head>
 <body class="rtl">
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <img src="../images/logo.png" alt="سوفت سكوب" class="preloader-logo">
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm" id="mainNavbar">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-premium" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="../images/logo.png" alt="سوفت سكوب" height="40">
+                <img src="../images/logo.png" alt="سوفت سكوب" height="45">
             </a>
+
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto gap-lg-4">
-                    <li class="nav-item"><a class="nav-link fw-medium" href="index.html">الرئيسية</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="services.html">خدماتنا</a></li>
-                    <li class="nav-item"><a class="nav-link active fw-medium" href="about.html">من نحن</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="portfolio.html">أعمالنا</a></li>
-                    <li class="nav-item"><a class="nav-link fw-medium" href="contact.html">تواصل معنا</a></li>
+                <ul class="navbar-nav mx-auto gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">أعمالنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">تواصل معنا</a>
+                    </li>
                 </ul>
+
                 <div class="d-flex align-items-center gap-3">
-                    <a href="../en/about.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">English</a>
-                    <a href="contact.html" class="btn btn-primary rounded-pill px-4">ابدأ الآن</a>
+                    <a href="../en/about.html" class="btn btn-sm btn-outline-light rounded-pill px-3">English</a>
+                    <a href="contact.html" class="btn-premium">
+                        ابدأ الآن <i class="bi bi-arrow-left"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="py-5" style="padding-top: 140px; padding-bottom: 80px; background: linear-gradient(135deg, #0F0F0F 0%, #1a1a1a 100%);">
-        <div class="container">
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <!-- Background Video -->
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-team-of-professionals-working-in-the-office-4832-large.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Animated Shapes -->
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <!-- Particles -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="container page-hero-content">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-8">
-                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-4">من نحن</span>
-                    <h1 class="display-4 fw-bold text-white mb-4">نبني برمجيات تُحدث فرقاً</h1>
-                    <p class="lead text-white text-opacity-75">
+                    <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">
+                        <div class="pulse-dot"></div>
+                        <span>من نحن</span>
+                    </div>
+                    <h1 class="page-hero-title" data-aos="fade-up" data-aos-delay="200">
+                        نبني برمجيات <span class="gradient-text">ذات أهمية</span>
+                    </h1>
+                    <p class="page-hero-subtitle" data-aos="fade-up" data-aos-delay="300">
                         نحن فريق من المطورين والمصممين والاستراتيجيين الشغوفين المكرسين لتقديم حلول برمجية استثنائية للمؤسسات في منطقة الخليج.
                     </p>
                 </div>
             </div>
         </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>تصفح</span>
+            <div class="scroll-mouse"></div>
+        </div>
     </section>
 
     <!-- Our Story -->
-    <section class="py-5" style="padding-top: 100px; padding-bottom: 100px;">
+    <section class="section-premium section-light">
         <div class="container">
             <div class="row align-items-center g-5">
-                <div class="col-lg-6 order-lg-2">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=500&fit=crop"
-                         alt="فريقنا"
-                         class="img-fluid rounded-4 shadow-lg">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=500&fit=crop"
+                             alt="فريقنا"
+                             class="img-fluid rounded-4 shadow-lg">
+                        <div class="about-experience-badge">
+                            <span class="experience-years">+8</span>
+                            <span class="experience-text">سنوات من التميز</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 order-lg-1">
-                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-3">قصتنا</span>
-                    <h2 class="display-5 fw-bold mb-4">من الرؤية إلى الواقع</h2>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="section-badge">
+                        <i class="bi bi-circle-fill"></i>
+                        قصتنا
+                    </div>
+                    <h2 class="section-title text-start mb-4">من الرؤية إلى الواقع</h2>
                     <p class="text-muted mb-4">
-                        تأسست سوفت سكوب برؤية لسد الفجوة بين معايير التكنولوجيا العالمية والاحتياجات الفريدة لأعمال الخليج، ونمت لتصبح شريكاً موثوقاً للمؤسسات الباحثة عن التميز الرقمي.
+                        تأسست سوفت سكوب برؤية لسد الفجوة بين معايير التكنولوجيا العالمية والاحتياجات الفريدة لأعمال الخليج، ونمت لتصبح شريكاً موثوقاً للمؤسسات التي تسعى للتميز الرقمي.
                     </p>
                     <p class="text-muted mb-4">
-                        بدأت رحلتنا عندما أدركنا أن الشركات في المنطقة تحتاج إلى أكثر من مجرد برمجيات - إنهم يحتاجون إلى شركاء يفهمون ثقافتهم ولغتهم وديناميكيات السوق. اليوم، نواصل تقديم حلول تحترم هذه الفروق الدقيقة مع الاستفادة من أحدث التقنيات.
+                        بدأت رحلتنا عندما أدركنا أن الشركات في المنطقة تحتاج أكثر من مجرد برمجيات - إنها تحتاج شركاء يفهمون ثقافتهم ولغتهم وديناميكيات السوق. اليوم، نواصل تقديم حلول تحترم هذه الفروق الدقيقة مع الاستفادة من أحدث التقنيات.
                     </p>
-                    <div class="row g-4 mt-2">
+
+                    <div class="row g-4 mt-4">
                         <div class="col-6">
-                            <h3 class="text-primary fw-bold mb-1">2016</h3>
-                            <p class="text-muted small mb-0">سنة التأسيس</p>
+                            <div class="about-stat" data-aos="fade-up" data-aos-delay="100">
+                                <div class="about-stat-number" data-count="2016">2016</div>
+                                <div class="about-stat-label">سنة التأسيس</div>
+                            </div>
                         </div>
                         <div class="col-6">
-                            <h3 class="text-primary fw-bold mb-1">+50</h3>
-                            <p class="text-muted small mb-0">عضو في الفريق</p>
+                            <div class="about-stat" data-aos="fade-up" data-aos-delay="200">
+                                <div class="about-stat-number">+50</div>
+                                <div class="about-stat-label">عضو فريق</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -118,29 +170,31 @@
     </section>
 
     <!-- Mission & Vision -->
-    <section class="py-5" style="padding-top: 80px; padding-bottom: 80px; background-color: #F7F7F7;">
+    <section class="section-premium">
         <div class="container">
             <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="bg-white rounded-4 p-5 h-100 shadow-sm">
-                        <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex p-3 mb-4">
-                            <i class="bi bi-bullseye text-primary fs-3"></i>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="bi bi-bullseye"></i>
                         </div>
-                        <h3 class="fw-bold mb-3">رسالتنا</h3>
-                        <p class="text-muted mb-0">
-                            تمكين مؤسسات الخليج بحلول برمجية مبتكرة تدفع النمو والكفاءة والميزة التنافسية. نحن ملتزمون بفهم التحديات الفريدة لعملائنا وتقديم تقنية مخصصة تُحدث فرقاً حقيقياً.
+                        <h3>رسالتنا</h3>
+                        <p>
+                            تمكين مؤسسات الخليج بحلول برمجية مبتكرة تدفع النمو والكفاءة والميزة التنافسية. نحن ملتزمون بفهم التحديات الفريدة لعملائنا وتقديم تكنولوجيا مخصصة تحدث فرقاً حقيقياً.
                         </p>
+                        <div class="mission-decoration"></div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="bg-white rounded-4 p-5 h-100 shadow-sm">
-                        <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex p-3 mb-4">
-                            <i class="bi bi-eye text-primary fs-3"></i>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mission-card vision-card">
+                        <div class="mission-icon">
+                            <i class="bi bi-eye"></i>
                         </div>
-                        <h3 class="fw-bold mb-3">رؤيتنا</h3>
-                        <p class="text-muted mb-0">
-                            أن نكون الشريك الرائد في تطوير البرمجيات في منطقة الخليج، معترفاً بنا لتميزنا التقني وفهمنا الثقافي والتزامنا الثابت بنجاح العملاء. نتصور مستقبلاً يتمتع فيه كل عمل بإمكانية الوصول إلى حلول رقمية عالمية المستوى.
+                        <h3>رؤيتنا</h3>
+                        <p>
+                            أن نكون الشريك الرائد في تطوير البرمجيات في منطقة الخليج، معروفين بتميزنا التقني وفهمنا الثقافي والتزامنا الراسخ بنجاح العملاء. نتصور مستقبلاً تحصل فيه كل شركة على حلول رقمية عالمية المستوى.
                         </p>
+                        <div class="mission-decoration"></div>
                     </div>
                 </div>
             </div>
@@ -148,103 +202,240 @@
     </section>
 
     <!-- Our Values -->
-    <section class="py-5" style="padding-top: 100px; padding-bottom: 100px;">
+    <section class="section-premium section-light">
         <div class="container">
-            <div class="text-center mb-5">
-                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-3">قيمنا</span>
-                <h2 class="display-5 fw-bold mb-3">ما يحركنا</h2>
-                <p class="text-muted mx-auto" style="max-width: 600px;">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="bi bi-circle-fill"></i>
+                    قيمنا
+                </div>
+                <h2 class="section-title">ما يحركنا</h2>
+                <p class="section-subtitle">
                     هذه القيم الأساسية توجه كل ما نفعله، من كيفية بناء البرمجيات إلى كيفية العمل مع عملائنا.
                 </p>
             </div>
 
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-center">
-                        <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
-                            <i class="bi bi-star text-primary fs-3"></i>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="bi bi-star"></i>
                         </div>
-                        <h5 class="fw-bold mb-3">التميز</h5>
-                        <p class="text-muted">نسعى لأعلى المعايير في كل ما نقدمه، ولا نقبل بالمتوسط أبداً.</p>
+                        <h5>التميز</h5>
+                        <p>نسعى لأعلى المعايير في كل ما نقدمه، ولا نقبل بالمتوسط أبداً.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-center">
-                        <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
-                            <i class="bi bi-people text-primary fs-3"></i>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="bi bi-people"></i>
                         </div>
-                        <h5 class="fw-bold mb-3">الشراكة</h5>
-                        <p class="text-muted">نبني علاقات دائمة مع عملائنا، نعامل نجاحهم كأنه نجاحنا.</p>
+                        <h5>الشراكة</h5>
+                        <p>نبني علاقات دائمة مع عملائنا، ونعامل نجاحهم على أنه نجاحنا.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-center">
-                        <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
-                            <i class="bi bi-lightbulb text-primary fs-3"></i>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="bi bi-lightbulb"></i>
                         </div>
-                        <h5 class="fw-bold mb-3">الابتكار</h5>
-                        <p class="text-muted">نتبنى التقنيات الجديدة والأساليب الإبداعية لحل التحديات المعقدة.</p>
+                        <h5>الابتكار</h5>
+                        <p>نتبنى التقنيات الجديدة والمناهج الإبداعية لحل التحديات المعقدة.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-center">
-                        <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
-                            <i class="bi bi-shield-check text-primary fs-3"></i>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="bi bi-shield-check"></i>
                         </div>
-                        <h5 class="fw-bold mb-3">النزاهة</h5>
-                        <p class="text-muted">نعمل بشفافية وصدق، نبني الثقة من خلال أفعالنا.</p>
+                        <h5>النزاهة</h5>
+                        <p>نعمل بشفافية وصدق، نبني الثقة من خلال أفعالنا.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technologies -->
-    <section class="py-5" style="padding-top: 80px; padding-bottom: 80px; background-color: #0F0F0F;">
+    <!-- Team Section -->
+    <section class="section-premium">
         <div class="container">
-            <div class="text-center mb-5">
-                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-3">تقنياتنا</span>
-                <h2 class="display-5 fw-bold text-white mb-3">التقنيات التي نستخدمها</h2>
-                <p class="text-white text-opacity-50 mx-auto" style="max-width: 600px;">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="bi bi-circle-fill"></i>
+                    فريقنا
+                </div>
+                <h2 class="section-title">فريق القيادة</h2>
+                <p class="section-subtitle">
+                    تعرف على الخبراء الذين يقودون الابتكار والتميز في سوفت سكوب.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="أحمد الحسن">
+                            <div class="team-social">
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h5>أحمد الحسن</h5>
+                            <span>الرئيس التنفيذي والمؤسس</span>
+                            <p>أكثر من 15 عاماً في تطوير البرمجيات المؤسسية والاستراتيجية الرقمية.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face" alt="سارة المحمود">
+                            <div class="team-social">
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h5>سارة المحمود</h5>
+                            <span>المدير التقني</span>
+                            <p>خبيرة في هندسة السحابة وتصميم الأنظمة القابلة للتوسع.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face" alt="خالد الراشد">
+                            <div class="team-social">
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h5>خالد الراشد</h5>
+                            <span>رئيس قسم التطوير</span>
+                            <p>يقود فرقنا التقنية بأكثر من 12 عاماً من الخبرة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="section-premium section-dark">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="bi bi-circle-fill"></i>
+                    تقنياتنا
+                </div>
+                <h2 class="section-title text-white">التقنيات التي نتقنها</h2>
+                <p class="section-subtitle">
                     نستفيد من أحدث التقنيات لبناء حلول قوية وقابلة للتوسع ومستقبلية.
                 </p>
             </div>
 
             <div class="row g-4 justify-content-center">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center h-100">
-                        <i class="bi bi-filetype-js text-primary fs-1 mb-2"></i>
-                        <p class="text-white small mb-0">JavaScript</p>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-card tech-card-dark">
+                        <i class="bi bi-filetype-js"></i>
+                        <span>JavaScript</span>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center h-100">
-                        <i class="bi bi-filetype-py text-primary fs-1 mb-2"></i>
-                        <p class="text-white small mb-0">Python</p>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="150">
+                    <div class="tech-card tech-card-dark">
+                        <i class="bi bi-filetype-py"></i>
+                        <span>Python</span>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center h-100">
-                        <i class="bi bi-phone text-primary fs-1 mb-2"></i>
-                        <p class="text-white small mb-0">React Native</p>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-card tech-card-dark">
+                        <i class="bi bi-phone"></i>
+                        <span>React Native</span>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center h-100">
-                        <i class="bi bi-cloud text-primary fs-1 mb-2"></i>
-                        <p class="text-white small mb-0">AWS</p>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="250">
+                    <div class="tech-card tech-card-dark">
+                        <i class="bi bi-cloud"></i>
+                        <span>AWS</span>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center h-100">
-                        <i class="bi bi-database text-primary fs-1 mb-2"></i>
-                        <p class="text-white small mb-0">PostgreSQL</p>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-card tech-card-dark">
+                        <i class="bi bi-database"></i>
+                        <span>PostgreSQL</span>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center h-100">
-                        <i class="bi bi-box text-primary fs-1 mb-2"></i>
-                        <p class="text-white small mb-0">Docker</p>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="350">
+                    <div class="tech-card tech-card-dark">
+                        <i class="bi bi-box"></i>
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center mt-3">
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tech-card tech-card-dark">
+                        <i class="bi bi-filetype-java"></i>
+                        <span>Java</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="450">
+                    <div class="tech-card tech-card-dark">
+                        <i class="bi bi-globe"></i>
+                        <span>Angular</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="500">
+                    <div class="tech-card tech-card-dark">
+                        <i class="bi bi-cloud-fill"></i>
+                        <span>Azure</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="550">
+                    <div class="tech-card tech-card-dark">
+                        <i class="bi bi-cpu"></i>
+                        <span>Kubernetes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-premium">
+        <div class="container position-relative">
+            <div class="row g-4">
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-item-premium">
+                        <div class="stat-number">+150</div>
+                        <div class="stat-label">مشروع منجز</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item-premium">
+                        <div class="stat-number">+50</div>
+                        <div class="stat-label">عميل مؤسسي</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item-premium">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">رضا العملاء</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item-premium">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">دول نخدمها</div>
                     </div>
                 </div>
             </div>
@@ -252,98 +443,149 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-5 position-relative overflow-hidden" style="padding-top: 100px; padding-bottom: 100px; background: linear-gradient(135deg, #E60000 0%, #B80000 100%);">
-        <div class="container position-relative" style="z-index: 10;">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="display-5 fw-bold text-white mb-4">انضم إلينا في رحلتنا</h2>
-                    <p class="lead text-white text-opacity-75 mb-5">
-                        سواء كنت تتطلع لبناء شيء جديد أو تحويل ما لديك، نحن هنا للمساعدة.
-                    </p>
-                    <a href="contact.html" class="btn btn-white btn-lg rounded-pill px-5 py-3">
-                        ابدأ محادثة <i class="bi bi-arrow-left ms-2 rtl-flip"></i>
+    <section class="cta-premium">
+        <div class="cta-shapes">
+            <div class="cta-shape cta-shape-1"></div>
+            <div class="cta-shape cta-shape-2"></div>
+            <div class="cta-shape cta-shape-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">انضم إلينا في رحلتنا</h2>
+                <p class="cta-text">
+                    سواء كنت تتطلع لبناء شيء جديد أو تحويل ما لديك، نحن هنا للمساعدة.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-white-premium">
+                        ابدأ محادثة <i class="bi bi-arrow-left"></i>
+                    </a>
+                    <a href="portfolio.html" class="btn-premium-outline">
+                        <i class="bi bi-folder me-2"></i> شاهد أعمالنا
                     </a>
                 </div>
             </div>
         </div>
-        <div class="position-absolute" style="top: -50px; left: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
-        <div class="position-absolute" style="bottom: -100px; right: -100px; width: 300px; height: 300px; background: rgba(255,255,255,0.05); border-radius: 50%;"></div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row g-4 mb-5">
-                <div class="col-lg-4">
-                    <img src="../images/logo.png" alt="سوفت سكوب" height="40" class="mb-4" style="filter: brightness(0) invert(1);">
-                    <p class="text-white text-opacity-75 mb-4">
-                        حلول برمجية للمؤسسات مصممة لسوق الخليج. نحول الأعمال من خلال التكنولوجيا المبتكرة.
-                    </p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-white text-opacity-50 fs-5"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="text-white text-opacity-50 fs-5"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="text-white text-opacity-50 fs-5"><i class="bi bi-instagram"></i></a>
+    <footer class="footer-premium">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <img src="../images/logo.png" alt="سوفت سكوب" class="footer-logo">
+                        <p class="footer-text">
+                            حلول برمجية مؤسسية مصممة لسوق الخليج. نحوّل الأعمال من خلال التكنولوجيا المبتكرة والشراكة المخلصة.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h6 class="footer-title">روابط سريعة</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="services.html">خدماتنا</a></li>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="portfolio.html">أعمالنا</a></li>
+                            <li><a href="contact.html">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h6 class="footer-title">الخدمات</h6>
+                        <ul class="footer-links">
+                            <li><a href="services.html">البرمجيات المخصصة</a></li>
+                            <li><a href="services.html">تطبيقات الجوال</a></li>
+                            <li><a href="services.html">الحلول السحابية</a></li>
+                            <li><a href="services.html">الاستشارات</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h6 class="footer-title">تواصل معنا</h6>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>الخليج التجاري، دبي<br>الإمارات العربية المتحدة</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:info@softscope.ae">info@softscope.ae</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+971000000000">+971 00 000 0000</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-whatsapp"></i>
+                            <a href="https://wa.me/971000000000">واتساب</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-lg-2">
-                    <h6 class="fw-bold mb-4">روابط سريعة</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html" class="text-white text-opacity-50 text-decoration-none">الرئيسية</a></li>
-                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">خدماتنا</a></li>
-                        <li class="mb-2"><a href="about.html" class="text-white text-opacity-50 text-decoration-none">من نحن</a></li>
-                        <li class="mb-2"><a href="portfolio.html" class="text-white text-opacity-50 text-decoration-none">أعمالنا</a></li>
-                        <li class="mb-2"><a href="contact.html" class="text-white text-opacity-50 text-decoration-none">تواصل معنا</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2">
-                    <h6 class="fw-bold mb-4">الخدمات</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">تطوير البرمجيات</a></li>
-                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">تطبيقات الجوال</a></li>
-                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">الحلول السحابية</a></li>
-                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">الاستشارات</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <h6 class="fw-bold mb-4">تواصل معنا</h6>
-                    <ul class="list-unstyled">
-                        <li class="mb-3 d-flex gap-3">
-                            <i class="bi bi-geo-alt text-primary"></i>
-                            <span class="text-white text-opacity-50">دبي، الإمارات العربية المتحدة</span>
-                        </li>
-                        <li class="mb-3 d-flex gap-3">
-                            <i class="bi bi-envelope text-primary"></i>
-                            <a href="mailto:info@softscope.ae" class="text-white text-opacity-50 text-decoration-none">info@softscope.ae</a>
-                        </li>
-                        <li class="mb-3 d-flex gap-3">
-                            <i class="bi bi-telephone text-primary"></i>
-                            <a href="tel:+971000000000" class="text-white text-opacity-50 text-decoration-none">+971 00 000 0000</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <hr class="border-white border-opacity-10">
-            <div class="row align-items-center pt-3">
-                <div class="col-md-6">
-                    <p class="text-white text-opacity-50 mb-0 small">&copy; 2024 سوفت سكوب. جميع الحقوق محفوظة.</p>
-                </div>
-                <div class="col-md-6 text-md-start">
-                    <a href="#" class="text-white text-opacity-50 text-decoration-none small me-3">سياسة الخصوصية</a>
-                    <a href="#" class="text-white text-opacity-50 text-decoration-none small">شروط الخدمة</a>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="footer-copyright mb-0">
+                            &copy; 2024 سوفت سكوب. جميع الحقوق محفوظة.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-md-start">
+                        <a href="#" class="footer-copyright ms-3">سياسة الخصوصية</a>
+                        <a href="#" class="footer-copyright">شروط الخدمة</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
     <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('preloader').classList.add('loaded');
+            }, 500);
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('mainNavbar');
         window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('mainNavbar');
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+
+        // Scroll indicator
+        document.querySelector('.scroll-indicator')?.addEventListener('click', function() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
         });
     </script>
 </body>
