@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="من نحن - سوفت سكوب شريكك الموثوق في تطوير البرمجيات في منطقة الخليج. تعرف على قصتنا ورسالتنا والفريق وراء نجاحنا.">
+    <title>من نحن | سوفت سكوب</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E60000',
+                        'primary-dark': '#B80000',
+                        dark: '#0F0F0F',
+                        'gray-light': '#F7F7F7',
+                    },
+                    fontFamily: {
+                        heading: ['Cairo', 'sans-serif'],
+                        body: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .rtl-flip { transform: scaleX(-1); }
+    </style>
+</head>
+<body class="rtl">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/logo.png" alt="سوفت سكوب" height="40">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-lg-4">
+                    <li class="nav-item"><a class="nav-link fw-medium" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="services.html">خدماتنا</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-medium" href="about.html">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="portfolio.html">أعمالنا</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="contact.html">تواصل معنا</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="../en/about.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">English</a>
+                    <a href="contact.html" class="btn btn-primary rounded-pill px-4">ابدأ الآن</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5" style="padding-top: 140px; padding-bottom: 80px; background: linear-gradient(135deg, #0F0F0F 0%, #1a1a1a 100%);">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-4">من نحن</span>
+                    <h1 class="display-4 fw-bold text-white mb-4">نبني برمجيات تُحدث فرقاً</h1>
+                    <p class="lead text-white text-opacity-75">
+                        نحن فريق من المطورين والمصممين والاستراتيجيين الشغوفين المكرسين لتقديم حلول برمجية استثنائية للمؤسسات في منطقة الخليج.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-5" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=500&fit=crop"
+                         alt="فريقنا"
+                         class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-3">قصتنا</span>
+                    <h2 class="display-5 fw-bold mb-4">من الرؤية إلى الواقع</h2>
+                    <p class="text-muted mb-4">
+                        تأسست سوفت سكوب برؤية لسد الفجوة بين معايير التكنولوجيا العالمية والاحتياجات الفريدة لأعمال الخليج، ونمت لتصبح شريكاً موثوقاً للمؤسسات الباحثة عن التميز الرقمي.
+                    </p>
+                    <p class="text-muted mb-4">
+                        بدأت رحلتنا عندما أدركنا أن الشركات في المنطقة تحتاج إلى أكثر من مجرد برمجيات - إنهم يحتاجون إلى شركاء يفهمون ثقافتهم ولغتهم وديناميكيات السوق. اليوم، نواصل تقديم حلول تحترم هذه الفروق الدقيقة مع الاستفادة من أحدث التقنيات.
+                    </p>
+                    <div class="row g-4 mt-2">
+                        <div class="col-6">
+                            <h3 class="text-primary fw-bold mb-1">2016</h3>
+                            <p class="text-muted small mb-0">سنة التأسيس</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="text-primary fw-bold mb-1">+50</h3>
+                            <p class="text-muted small mb-0">عضو في الفريق</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-5" style="padding-top: 80px; padding-bottom: 80px; background-color: #F7F7F7;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="bg-white rounded-4 p-5 h-100 shadow-sm">
+                        <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex p-3 mb-4">
+                            <i class="bi bi-bullseye text-primary fs-3"></i>
+                        </div>
+                        <h3 class="fw-bold mb-3">رسالتنا</h3>
+                        <p class="text-muted mb-0">
+                            تمكين مؤسسات الخليج بحلول برمجية مبتكرة تدفع النمو والكفاءة والميزة التنافسية. نحن ملتزمون بفهم التحديات الفريدة لعملائنا وتقديم تقنية مخصصة تُحدث فرقاً حقيقياً.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-white rounded-4 p-5 h-100 shadow-sm">
+                        <div class="bg-primary bg-opacity-10 rounded-3 d-inline-flex p-3 mb-4">
+                            <i class="bi bi-eye text-primary fs-3"></i>
+                        </div>
+                        <h3 class="fw-bold mb-3">رؤيتنا</h3>
+                        <p class="text-muted mb-0">
+                            أن نكون الشريك الرائد في تطوير البرمجيات في منطقة الخليج، معترفاً بنا لتميزنا التقني وفهمنا الثقافي والتزامنا الثابت بنجاح العملاء. نتصور مستقبلاً يتمتع فيه كل عمل بإمكانية الوصول إلى حلول رقمية عالمية المستوى.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-5" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-3">قيمنا</span>
+                <h2 class="display-5 fw-bold mb-3">ما يحركنا</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">
+                    هذه القيم الأساسية توجه كل ما نفعله، من كيفية بناء البرمجيات إلى كيفية العمل مع عملائنا.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                            <i class="bi bi-star text-primary fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">التميز</h5>
+                        <p class="text-muted">نسعى لأعلى المعايير في كل ما نقدمه، ولا نقبل بالمتوسط أبداً.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                            <i class="bi bi-people text-primary fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">الشراكة</h5>
+                        <p class="text-muted">نبني علاقات دائمة مع عملائنا، نعامل نجاحهم كأنه نجاحنا.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                            <i class="bi bi-lightbulb text-primary fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">الابتكار</h5>
+                        <p class="text-muted">نتبنى التقنيات الجديدة والأساليب الإبداعية لحل التحديات المعقدة.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center">
+                        <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                            <i class="bi bi-shield-check text-primary fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">النزاهة</h5>
+                        <p class="text-muted">نعمل بشفافية وصدق، نبني الثقة من خلال أفعالنا.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="py-5" style="padding-top: 80px; padding-bottom: 80px; background-color: #0F0F0F;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-3">تقنياتنا</span>
+                <h2 class="display-5 fw-bold text-white mb-3">التقنيات التي نستخدمها</h2>
+                <p class="text-white text-opacity-50 mx-auto" style="max-width: 600px;">
+                    نستفيد من أحدث التقنيات لبناء حلول قوية وقابلة للتوسع ومستقبلية.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center h-100">
+                        <i class="bi bi-filetype-js text-primary fs-1 mb-2"></i>
+                        <p class="text-white small mb-0">JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center h-100">
+                        <i class="bi bi-filetype-py text-primary fs-1 mb-2"></i>
+                        <p class="text-white small mb-0">Python</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center h-100">
+                        <i class="bi bi-phone text-primary fs-1 mb-2"></i>
+                        <p class="text-white small mb-0">React Native</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center h-100">
+                        <i class="bi bi-cloud text-primary fs-1 mb-2"></i>
+                        <p class="text-white small mb-0">AWS</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center h-100">
+                        <i class="bi bi-database text-primary fs-1 mb-2"></i>
+                        <p class="text-white small mb-0">PostgreSQL</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="bg-white bg-opacity-10 rounded-3 p-4 text-center h-100">
+                        <i class="bi bi-box text-primary fs-1 mb-2"></i>
+                        <p class="text-white small mb-0">Docker</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 position-relative overflow-hidden" style="padding-top: 100px; padding-bottom: 100px; background: linear-gradient(135deg, #E60000 0%, #B80000 100%);">
+        <div class="container position-relative" style="z-index: 10;">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold text-white mb-4">انضم إلينا في رحلتنا</h2>
+                    <p class="lead text-white text-opacity-75 mb-5">
+                        سواء كنت تتطلع لبناء شيء جديد أو تحويل ما لديك، نحن هنا للمساعدة.
+                    </p>
+                    <a href="contact.html" class="btn btn-white btn-lg rounded-pill px-5 py-3">
+                        ابدأ محادثة <i class="bi bi-arrow-left ms-2 rtl-flip"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute" style="top: -50px; left: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+        <div class="position-absolute" style="bottom: -100px; right: -100px; width: 300px; height: 300px; background: rgba(255,255,255,0.05); border-radius: 50%;"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <img src="../images/logo.png" alt="سوفت سكوب" height="40" class="mb-4" style="filter: brightness(0) invert(1);">
+                    <p class="text-white text-opacity-75 mb-4">
+                        حلول برمجية للمؤسسات مصممة لسوق الخليج. نحول الأعمال من خلال التكنولوجيا المبتكرة.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white text-opacity-50 fs-5"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white text-opacity-50 fs-5"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white text-opacity-50 fs-5"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="fw-bold mb-4">روابط سريعة</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-opacity-50 text-decoration-none">الرئيسية</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">خدماتنا</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white text-opacity-50 text-decoration-none">من نحن</a></li>
+                        <li class="mb-2"><a href="portfolio.html" class="text-white text-opacity-50 text-decoration-none">أعمالنا</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-opacity-50 text-decoration-none">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="fw-bold mb-4">الخدمات</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">تطوير البرمجيات</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">تطبيقات الجوال</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">الحلول السحابية</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-opacity-50 text-decoration-none">الاستشارات</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-4">تواصل معنا</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-geo-alt text-primary"></i>
+                            <span class="text-white text-opacity-50">دبي، الإمارات العربية المتحدة</span>
+                        </li>
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-envelope text-primary"></i>
+                            <a href="mailto:info@softscope.ae" class="text-white text-opacity-50 text-decoration-none">info@softscope.ae</a>
+                        </li>
+                        <li class="mb-3 d-flex gap-3">
+                            <i class="bi bi-telephone text-primary"></i>
+                            <a href="tel:+971000000000" class="text-white text-opacity-50 text-decoration-none">+971 00 000 0000</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-white border-opacity-10">
+            <div class="row align-items-center pt-3">
+                <div class="col-md-6">
+                    <p class="text-white text-opacity-50 mb-0 small">&copy; 2024 سوفت سكوب. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-md-start">
+                    <a href="#" class="text-white text-opacity-50 text-decoration-none small me-3">سياسة الخصوصية</a>
+                    <a href="#" class="text-white text-opacity-50 text-decoration-none small">شروط الخدمة</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="خدمات سوفت سكوب - تطوير البرمجيات المخصصة، تطبيقات الجوال، الحلول السحابية، والتحول الرقمي للمؤسسات في منطقة الخليج.">
+    <title>خدماتنا | سوفت سكوب</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="rtl">
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <img src="../images/logo.png" alt="سوفت سكوب" class="preloader-logo">
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-premium" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/logo.png" alt="سوفت سكوب" height="45">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">أعمالنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">تواصل معنا</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="../en/services.html" class="btn btn-sm btn-outline-light rounded-pill px-3">English</a>
+                    <a href="contact.html" class="btn-premium">
+                        ابدأ الآن <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <!-- Background Video -->
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-woman-typing-on-a-laptop-keyboard-4815-large.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Animated Shapes -->
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <!-- Particles -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="container page-hero-content">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">
+                        <div class="pulse-dot"></div>
+                        <span>خدماتنا</span>
+                    </div>
+                    <h1 class="page-hero-title" data-aos="fade-up" data-aos-delay="200">
+                        حلول مؤسسية <span class="gradient-text">تدفع النمو</span>
+                    </h1>
+                    <p class="page-hero-subtitle" data-aos="fade-up" data-aos-delay="300">
+                        من تطوير البرمجيات المخصصة إلى التحول السحابي، نقدم حلولاً شاملة مصممة خصيصاً لسوق الخليج.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>تصفح</span>
+            <div class="scroll-mouse"></div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section-premium section-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-premium service-card-featured">
+                        <div class="service-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h4>البرمجيات المخصصة</h4>
+                        <p>حلول مصممة من الصفر لتلبية متطلبات أعمالك الفريدة.</p>
+                        <a href="#custom-software" class="service-link">
+                            اعرف المزيد <i class="bi bi-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-premium">
+                        <div class="service-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h4>تطبيقات الجوال</h4>
+                        <p>تطبيقات أصلية ومتعددة المنصات تقدم تجربة مستخدم استثنائية.</p>
+                        <a href="#mobile-apps" class="service-link">
+                            اعرف المزيد <i class="bi bi-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-premium">
+                        <div class="service-icon">
+                            <i class="bi bi-cloud"></i>
+                        </div>
+                        <h4>الحلول السحابية</h4>
+                        <p>بنية تحتية سحابية قابلة للتوسع وخدمات ترحيل للأعمال الحديثة.</p>
+                        <a href="#cloud-solutions" class="service-link">
+                            اعرف المزيد <i class="bi bi-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card-premium">
+                        <div class="service-icon">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <h4>التحول الرقمي</h4>
+                        <p>استراتيجيات شاملة لتحديث وتحسين عملياتك.</p>
+                        <a href="#digital-transformation" class="service-link">
+                            اعرف المزيد <i class="bi bi-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Software Development -->
+    <section class="section-premium" id="custom-software">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=450&fit=crop"
+                             alt="تطوير البرمجيات المخصصة"
+                             class="img-fluid rounded-4 shadow-lg">
+                        <div class="service-image-badge">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span>+150 مشروع</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="section-badge">
+                        <i class="bi bi-circle-fill"></i>
+                        التطوير المخصص
+                    </div>
+                    <h2 class="section-title text-start mb-4">تطوير البرمجيات المخصصة</h2>
+                    <p class="text-muted mb-4">
+                        نبني حلولاً برمجية مخصصة تتوافق تماماً مع عمليات أعمالك. يتخصص فريقنا في إنشاء تطبيقات قوية وقابلة للتوسع تنمو مع مؤسستك.
+                    </p>
+
+                    <div class="service-features">
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>نظام تخطيط موارد المؤسسات (ERP)</h6>
+                                <p>أنظمة متكاملة لإدارة عمليات أعمالك الأساسية</p>
+                            </div>
+                        </div>
+
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="150">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>إدارة علاقات العملاء (CRM)</h6>
+                                <p>أدوات قوية لإدارة وتنمية علاقات العملاء</p>
+                            </div>
+                        </div>
+
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>ذكاء الأعمال والتحليلات</h6>
+                                <p>رؤى مبنية على البيانات لاتخاذ قرارات مدروسة</p>
+                            </div>
+                        </div>
+
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="250">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>أنظمة أتمتة سير العمل</h6>
+                                <p>تبسيط العمليات وزيادة الإنتاجية</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn-premium mt-4">
+                        ناقش مشروعك <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Development -->
+    <section class="section-premium section-light" id="mobile-apps">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-right">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=450&fit=crop"
+                             alt="تطوير تطبيقات الجوال"
+                             class="img-fluid rounded-4 shadow-lg">
+                        <div class="service-image-badge">
+                            <i class="bi bi-phone text-primary"></i>
+                            <span>iOS & Android</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1" data-aos="fade-left">
+                    <div class="section-badge">
+                        <i class="bi bi-circle-fill"></i>
+                        تطوير الجوال
+                    </div>
+                    <h2 class="section-title text-start mb-4">تطوير تطبيقات الجوال</h2>
+                    <p class="text-muted mb-4">
+                        أنشئ تجارب جوال قوية لأنظمة iOS و Android. نطور تطبيقات أصلية ومتعددة المنصات تقدم أداءً استثنائياً وتفاعلاً ممتازاً مع المستخدم.
+                    </p>
+
+                    <div class="service-features">
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>تطوير iOS و Android الأصلي</h6>
+                                <p>تطبيقات خاصة بالمنصة بأداء مثالي</p>
+                            </div>
+                        </div>
+
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="150">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>حلول متعددة المنصات</h6>
+                                <p>React Native و Flutter للتطوير الفعال</p>
+                            </div>
+                        </div>
+
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>تطبيقات الجوال للمؤسسات</h6>
+                                <p>تطبيقات آمنة لعمليات الأعمال الداخلية</p>
+                            </div>
+                        </div>
+
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="250">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>تحسين ونشر متجر التطبيقات</h6>
+                                <p>دعم كامل للنشر والتحسين</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn-premium mt-4">
+                        ابدأ تطبيقك <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud Solutions -->
+    <section class="section-premium" id="cloud-solutions">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&h=450&fit=crop"
+                             alt="الحلول السحابية"
+                             class="img-fluid rounded-4 shadow-lg">
+                        <div class="service-image-badge">
+                            <i class="bi bi-cloud-check text-info"></i>
+                            <span>99.9% وقت التشغيل</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="section-badge">
+                        <i class="bi bi-circle-fill"></i>
+                        الخدمات السحابية
+                    </div>
+                    <h2 class="section-title text-start mb-4">الحلول السحابية</h2>
+                    <p class="text-muted mb-4">
+                        استفد من قوة الحوسبة السحابية لتوسيع أعمالك. نقدم خدمات سحابية شاملة من الترحيل إلى الإدارة، مع ضمان الأمان والأداء.
+                    </p>
+
+                    <div class="service-features">
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>استراتيجية وترحيل السحابة</h6>
+                                <p>انتقال سلس إلى البنية التحتية السحابية</p>
+                            </div>
+                        </div>
+
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="150">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>AWS، Azure، Google Cloud</h6>
+                                <p>خبرة متعددة السحابات للحلول المثلى</p>
+                            </div>
+                        </div>
+
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>DevOps و CI/CD</h6>
+                                <p>أنابيب نشر وتسليم آلية</p>
+                            </div>
+                        </div>
+
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="250">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>أمان السحابة والامتثال</h6>
+                                <p>أمان بمستوى المؤسسات والامتثال التنظيمي</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn-premium mt-4">
+                        استكشف خيارات السحابة <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Transformation -->
+    <section class="section-premium section-light" id="digital-transformation">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-right">
+                    <div class="service-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=450&fit=crop"
+                             alt="التحول الرقمي"
+                             class="img-fluid rounded-4 shadow-lg">
+                        <div class="service-image-badge">
+                            <i class="bi bi-lightning-charge text-warning"></i>
+                            <span>جاهز للمستقبل</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1" data-aos="fade-left">
+                    <div class="section-badge">
+                        <i class="bi bi-circle-fill"></i>
+                        التحول
+                    </div>
+                    <h2 class="section-title text-start mb-4">التحول الرقمي</h2>
+                    <p class="text-muted mb-4">
+                        قُد رحلتك الرقمية بتوجيه الخبراء. نساعد المؤسسات على تحديث عملياتها، وتبني تقنيات جديدة، والبقاء تنافسية في العصر الرقمي.
+                    </p>
+
+                    <div class="service-features">
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>استشارات الاستراتيجية الرقمية</h6>
+                                <p>توجيه الخبراء لخارطة طريقك الرقمية</p>
+                            </div>
+                        </div>
+
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="150">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>أتمتة وتحسين العمليات</h6>
+                                <p>تبسيط سير العمل مع الأتمتة الذكية</p>
+                            </div>
+                        </div>
+
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>تحديث الأنظمة القديمة</h6>
+                                <p>ترقية الأنظمة القديمة دون انقطاع</p>
+                            </div>
+                        </div>
+
+                        <div class="service-feature-item" data-aos="fade-up" data-aos-delay="250">
+                            <div class="service-feature-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                            <div class="service-feature-content">
+                                <h6>تقييم التكنولوجيا وخارطة الطريق</h6>
+                                <p>مسار واضح للتميز الرقمي</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn-premium mt-4">
+                        ابدأ رحلتك <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section-premium section-dark">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="bi bi-circle-fill"></i>
+                    منهجيتنا
+                </div>
+                <h2 class="section-title text-white">كيف نعمل</h2>
+                <p class="section-subtitle">
+                    منهجية مثبتة تضمن تسليم المشاريع بنجاح في كل مرة.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-card">
+                        <div class="process-number">01</div>
+                        <div class="process-icon">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <h5>الاكتشاف</h5>
+                        <p>نحلل متطلباتك وأهدافك وتحدياتك لفهم أعمالك بعمق.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-card">
+                        <div class="process-number">02</div>
+                        <div class="process-icon">
+                            <i class="bi bi-pencil-square"></i>
+                        </div>
+                        <h5>التصميم</h5>
+                        <p>يقوم فريقنا بإنشاء مخططات ونماذج أولية مفصلة للموافقة عليها.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-card">
+                        <div class="process-number">03</div>
+                        <div class="process-icon">
+                            <i class="bi bi-code-square"></i>
+                        </div>
+                        <h5>التطوير</h5>
+                        <p>تطوير رشيق مع تحديثات منتظمة وتحسينات متكررة.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-card">
+                        <div class="process-number">04</div>
+                        <div class="process-icon">
+                            <i class="bi bi-rocket-takeoff"></i>
+                        </div>
+                        <h5>التسليم</h5>
+                        <p>اختبار شامل ونشر ودعم مستمر للنجاح.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="section-premium section-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="bi bi-circle-fill"></i>
+                    تقنياتنا
+                </div>
+                <h2 class="section-title">التقنيات التي نستخدمها</h2>
+                <p class="section-subtitle">
+                    نستفيد من أحدث التقنيات لبناء حلول قوية وقابلة للتوسع ومستقبلية.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-card">
+                        <i class="bi bi-filetype-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="150">
+                    <div class="tech-card">
+                        <i class="bi bi-filetype-py"></i>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-card">
+                        <i class="bi bi-phone"></i>
+                        <span>React Native</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="250">
+                    <div class="tech-card">
+                        <i class="bi bi-cloud"></i>
+                        <span>AWS</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-card">
+                        <i class="bi bi-database"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="350">
+                    <div class="tech-card">
+                        <i class="bi bi-box"></i>
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-premium">
+        <div class="cta-shapes">
+            <div class="cta-shape cta-shape-1"></div>
+            <div class="cta-shape cta-shape-2"></div>
+            <div class="cta-shape cta-shape-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">هل أنت مستعد للبدء؟</h2>
+                <p class="cta-text">
+                    دعنا نناقش متطلبات مشروعك ونجد الحل المثالي لعملك.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-white-premium">
+                        اطلب عرض سعر <i class="bi bi-arrow-left"></i>
+                    </a>
+                    <a href="tel:+971000000000" class="btn-premium-outline">
+                        <i class="bi bi-telephone ms-2"></i> اتصل بنا الآن
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-premium">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <img src="../images/logo.png" alt="سوفت سكوب" class="footer-logo">
+                        <p class="footer-text">
+                            حلول برمجية مؤسسية مصممة لسوق الخليج. نحوّل الأعمال من خلال التكنولوجيا المبتكرة والشراكة المخلصة.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h6 class="footer-title">روابط سريعة</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="services.html">خدماتنا</a></li>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="portfolio.html">أعمالنا</a></li>
+                            <li><a href="contact.html">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h6 class="footer-title">الخدمات</h6>
+                        <ul class="footer-links">
+                            <li><a href="services.html">البرمجيات المخصصة</a></li>
+                            <li><a href="services.html">تطبيقات الجوال</a></li>
+                            <li><a href="services.html">الحلول السحابية</a></li>
+                            <li><a href="services.html">الاستشارات</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h6 class="footer-title">تواصل معنا</h6>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>الخليج التجاري، دبي<br>الإمارات العربية المتحدة</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:info@softscope.ae">info@softscope.ae</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+971000000000">+971 00 000 0000</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-whatsapp"></i>
+                            <a href="https://wa.me/971000000000">واتساب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="footer-copyright mb-0">
+                            &copy; 2024 سوفت سكوب. جميع الحقوق محفوظة.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-md-start">
+                        <a href="#" class="footer-copyright ms-3">سياسة الخصوصية</a>
+                        <a href="#" class="footer-copyright">شروط الخدمة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('preloader').classList.add('loaded');
+            }, 500);
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('mainNavbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll indicator
+        document.querySelector('.scroll-indicator')?.addEventListener('click', function() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
