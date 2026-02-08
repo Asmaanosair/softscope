@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact SoftScope - Get in touch for enterprise software solutions, custom development, and digital transformation services in the Gulf region.">
+    <title>Contact Us | SoftScope</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <img src="../images/logo.png" alt="SoftScope" class="preloader-logo">
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-premium" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../images/logo.png" alt="SoftScope" height="45">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="../ar/contact.html" class="btn btn-sm btn-outline-light rounded-pill px-3">العربية</a>
+                    <a href="contact.html" class="btn-premium">
+                        Get Started <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero page-hero-short">
+        <!-- Background Video -->
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-talking-on-a-phone-in-an-office-4641-large.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Animated Shapes -->
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <!-- Particles -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="container page-hero-content">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">
+                        <div class="pulse-dot"></div>
+                        <span>Get In Touch</span>
+                    </div>
+                    <h1 class="page-hero-title" data-aos="fade-up" data-aos-delay="200">
+                        Let's Build Something <span class="gradient-text">Great Together</span>
+                    </h1>
+                    <p class="page-hero-subtitle" data-aos="fade-up" data-aos-delay="300">
+                        Ready to transform your business? Reach out to us and let's discuss how we can help you achieve your goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-premium section-light">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-7" data-aos="fade-right">
+                    <div class="contact-form-card">
+                        <h3>Send Us a Message</h3>
+                        <p class="text-muted mb-4">Fill out the form below and we'll get back to you within 24 hours.</p>
+
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                                        <label for="firstName">First Name *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                        <label for="lastName">Last Name *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                        <label for="email">Email Address *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="phone" placeholder="Phone">
+                                        <label for="phone">Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="company" placeholder="Company">
+                                        <label for="company">Company Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="service">
+                                            <option value="" selected>Select a service</option>
+                                            <option value="custom-software">Custom Software Development</option>
+                                            <option value="mobile-apps">Mobile App Development</option>
+                                            <option value="cloud">Cloud Solutions</option>
+                                            <option value="digital-transformation">Digital Transformation</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <label for="service">Service Interested In</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="budget">
+                                            <option value="" selected>Select budget range</option>
+                                            <option value="10k-25k">$10,000 - $25,000</option>
+                                            <option value="25k-50k">$25,000 - $50,000</option>
+                                            <option value="50k-100k">$50,000 - $100,000</option>
+                                            <option value="100k+">$100,000+</option>
+                                        </select>
+                                        <label for="budget">Project Budget (USD)</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" placeholder="Message" style="height: 150px" required></textarea>
+                                        <label for="message">Tell us about your project *</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-premium btn-premium-lg w-100">
+                                        Send Message <i class="bi bi-arrow-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="d-flex flex-column gap-4">
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/966569637690" class="contact-card-premium contact-whatsapp">
+                            <div class="contact-card-icon">
+                                <i class="bi bi-whatsapp"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h5>WhatsApp Us</h5>
+                                <p>Quick response within minutes</p>
+                            </div>
+                            <i class="bi bi-arrow-right contact-card-arrow"></i>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:info@softscope.ae" class="contact-card-premium">
+                            <div class="contact-card-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h5>Email Us</h5>
+                                <p>info@softscope.ae</p>
+                            </div>
+                            <i class="bi bi-arrow-right contact-card-arrow"></i>
+                        </a>
+
+                        <!-- Phone -->
+                        <a href="tel:+966569637690" class="contact-card-premium">
+                            <div class="contact-card-icon">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h5>Call Us</h5>
+                                <p>+966 56 963 7690</p>
+                            </div>
+                            <i class="bi bi-arrow-right contact-card-arrow"></i>
+                        </a>
+
+                        <!-- Location -->
+                        <div class="contact-card-premium contact-location">
+                            <div class="contact-card-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h5>Visit Our Office</h5>
+                                <p>Business Bay, Dubai<br>United Arab Emirates</p>
+                            </div>
+                        </div>
+
+                        <!-- Working Hours -->
+                        <div class="working-hours-card">
+                            <div class="working-hours-header">
+                                <i class="bi bi-clock"></i>
+                                <h5>Working Hours</h5>
+                            </div>
+                            <div class="working-hours-list">
+                                <div class="working-hours-item">
+                                    <span>Sunday - Thursday</span>
+                                    <span class="hours">9:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="working-hours-item">
+                                    <span>Friday</span>
+                                    <span class="hours closed">Closed</span>
+                                </div>
+                                <div class="working-hours-item">
+                                    <span>Saturday</span>
+                                    <span class="hours">10:00 AM - 2:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.8893899878!2d55.2644!3d25.1865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDExJzExLjQiTiA1NcKwMTUnNTEuOCJF!5e0!3m2!1sen!2sae!4v1234567890"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-premium section-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-header" data-aos="fade-up">
+                        <div class="section-badge">
+                            <i class="bi bi-circle-fill"></i>
+                            FAQ
+                        </div>
+                        <h2 class="section-title">Frequently Asked Questions</h2>
+                        <p class="section-subtitle">
+                            Find answers to common questions about our services and process.
+                        </p>
+                    </div>
+
+                    <div class="faq-container">
+                        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                            <button class="faq-question active">
+                                <span>How long does a typical project take?</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer show">
+                                <p>Project timelines vary based on complexity and scope. A simple mobile app might take 2-3 months, while a comprehensive enterprise solution could take 6-12 months. We'll provide a detailed timeline during our initial consultation.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                            <button class="faq-question">
+                                <span>Do you provide ongoing support after project completion?</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we offer comprehensive maintenance and support packages. This includes bug fixes, security updates, performance optimization, and feature enhancements. We believe in building long-term partnerships with our clients.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                            <button class="faq-question">
+                                <span>Can you work with our existing technology stack?</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolutely! Our team is proficient in a wide range of technologies. We can integrate with your existing systems, work with your preferred technologies, or recommend the best solutions based on your specific needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                            <button class="faq-question">
+                                <span>Do you sign NDAs and ensure data confidentiality?</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we take confidentiality very seriously. We're happy to sign NDAs before any project discussions. All client data is handled with strict security protocols, and we comply with regional data protection regulations.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                            <button class="faq-question">
+                                <span>What is your payment structure?</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We typically work with a milestone-based payment structure. An initial deposit is required to begin work, followed by payments at key project milestones. This ensures both parties are aligned and the project progresses smoothly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-premium">
+        <div class="cta-shapes">
+            <div class="cta-shape cta-shape-1"></div>
+            <div class="cta-shape cta-shape-2"></div>
+            <div class="cta-shape cta-shape-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">Ready to Start Your Project?</h2>
+                <p class="cta-text">
+                    Schedule a free consultation with our team and discover how we can help transform your business.
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/966569637690" class="btn-white-premium">
+                        <i class="bi bi-whatsapp me-2"></i> Chat on WhatsApp
+                    </a>
+                    <a href="tel:+966569637690" class="btn-premium-outline">
+                        <i class="bi bi-telephone me-2"></i> Call Us Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-premium">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <img src="../images/logo.png" alt="SoftScope" class="footer-logo">
+                        <p class="footer-text">
+                            Enterprise software solutions designed for the Gulf market. We transform businesses through innovative technology and dedicated partnership.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://www.linkedin.com/in/soft-scope-20780b211/" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.behance.net/softscope24" target="_blank" class="social-link"><i class="bi bi-behance"></i></a>
+                            <a href="https://www.instagram.com/soft_scope_21" target="_blank" class="social-link"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.facebook.com/SoftScop" target="_blank" class="social-link"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h6 class="footer-title">Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h6 class="footer-title">Services</h6>
+                        <ul class="footer-links">
+                            <li><a href="services.html">Custom Software</a></li>
+                            <li><a href="services.html">Mobile Apps</a></li>
+                            <li><a href="services.html">Cloud Solutions</a></li>
+                            <li><a href="services.html">Consulting</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h6 class="footer-title">Contact Us</h6>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Business Bay, Dubai<br>United Arab Emirates</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:info@softscope.ae">info@softscope.ae</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+966569637690">+966 56 963 7690</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-whatsapp"></i>
+                            <a href="https://wa.me/966569637690">WhatsApp Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="footer-copyright mb-0">
+                            &copy; 2024 SoftScope. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" class="footer-copyright me-3">Privacy Policy</a>
+                        <a href="#" class="footer-copyright">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('preloader').classList.add('loaded');
+            }, 500);
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('mainNavbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const isActive = this.classList.contains('active');
+
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.querySelector('.faq-question').classList.remove('active');
+                    item.querySelector('.faq-answer').classList.remove('show');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    this.classList.add('active');
+                    faqItem.querySelector('.faq-answer').classList.add('show');
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Show success message
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="bi bi-check-circle me-2"></i> Message Sent!';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+                this.reset();
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
