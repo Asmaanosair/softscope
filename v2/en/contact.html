@@ -52,9 +52,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link active" href="contact.html">Contact</a>
                     </li>
@@ -126,66 +126,53 @@
                         <h3>Send Us a Message</h3>
                         <p class="text-muted mb-4">Fill out the form below and we'll get back to you within 24 hours.</p>
 
-                        <form id="contactForm">
+                        <form id="contactForm" onsubmit="sendToWhatsApp(event)">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
                                         <label for="firstName">First Name *</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
                                         <label for="lastName">Last Name *</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                                         <label for="email">Email Address *</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="tel" class="form-control" id="phone" placeholder="Phone">
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone">
                                         <label for="phone">Phone Number</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="company" placeholder="Company">
+                                        <input type="text" class="form-control" id="company" name="company" placeholder="Company">
                                         <label for="company">Company Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <select class="form-select" id="service">
-                                            <option value="" selected>Select a service</option>
-                                            <option value="custom-software">Custom Software Development</option>
-                                            <option value="mobile-apps">Mobile App Development</option>
-                                            <option value="cloud">Cloud Solutions</option>
-                                            <option value="digital-transformation">Digital Transformation</option>
-                                            <option value="other">Other</option>
-                                        </select>
+                                        <input type="text" class="form-control" id="service" name="service" placeholder="Service">
                                         <label for="service">Service Interested In</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <select class="form-select" id="budget">
-                                            <option value="" selected>Select budget range</option>
-                                            <option value="10k-25k">$10,000 - $25,000</option>
-                                            <option value="25k-50k">$25,000 - $50,000</option>
-                                            <option value="50k-100k">$50,000 - $100,000</option>
-                                            <option value="100k+">$100,000+</option>
-                                        </select>
-                                        <label for="budget">Project Budget (USD)</label>
+                                        <input type="text" class="form-control" id="budget" name="budget" placeholder="Budget">
+                                        <label for="budget">Project Budget</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" id="message" placeholder="Message" style="height: 150px" required></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Message" style="height: 150px" required></textarea>
                                         <label for="message">Tell us about your project *</label>
                                     </div>
                                 </div>
@@ -215,13 +202,13 @@
                         </a>
 
                         <!-- Email -->
-                        <a href="mailto:info@softscope.ae" class="contact-card-premium">
+                        <a href="mailto:softscop6@gmail.com" class="contact-card-premium">
                             <div class="contact-card-icon">
                                 <i class="bi bi-envelope"></i>
                             </div>
                             <div class="contact-card-content">
                                 <h5>Email Us</h5>
-                                <p>info@softscope.ae</p>
+                                <p>softscop6@gmail.com</p>
                             </div>
                             <i class="bi bi-arrow-right contact-card-arrow"></i>
                         </a>
@@ -238,16 +225,7 @@
                             <i class="bi bi-arrow-right contact-card-arrow"></i>
                         </a>
 
-                        <!-- Location -->
-                        <div class="contact-card-premium contact-location">
-                            <div class="contact-card-icon">
-                                <i class="bi bi-geo-alt"></i>
-                            </div>
-                            <div class="contact-card-content">
-                                <h5>Visit Our Office</h5>
-                                <p>Business Bay, Dubai<br>United Arab Emirates</p>
-                            </div>
-                        </div>
+                        <!-- Location removed -->
 
                         <!-- Working Hours -->
                         <div class="working-hours-card">
@@ -411,7 +389,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="about.html">About Us</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -419,22 +397,20 @@
                     <div class="col-6 col-lg-2">
                         <h6 class="footer-title">Services</h6>
                         <ul class="footer-links">
-                            <li><a href="services.html">Custom Software</a></li>
+                            <li><a href="services.html">Web Development</a></li>
                             <li><a href="services.html">Mobile Apps</a></li>
-                            <li><a href="services.html">Cloud Solutions</a></li>
-                            <li><a href="services.html">Consulting</a></li>
+                            <li><a href="services.html">Graphic Design</a></li>
+                            <li><a href="services.html">UI/UX Design</a></li>
+                            <li><a href="services.html">Branding</a></li>
+                            <li><a href="services.html">Motion</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4">
                         <h6 class="footer-title">Contact Us</h6>
                         <div class="footer-contact-item">
-                            <i class="bi bi-geo-alt"></i>
-                            <span>Business Bay, Dubai<br>United Arab Emirates</span>
-                        </div>
-                        <div class="footer-contact-item">
                             <i class="bi bi-envelope"></i>
-                            <a href="mailto:info@softscope.ae">info@softscope.ae</a>
+                            <a href="mailto:softscop6@gmail.com">softscop6@gmail.com</a>
                         </div>
                         <div class="footer-contact-item">
                             <i class="bi bi-telephone"></i>
@@ -519,22 +495,36 @@
             });
         });
 
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        // Send form data to WhatsApp
+        function sendToWhatsApp(e) {
             e.preventDefault();
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const company = document.getElementById('company').value;
+            const service = document.getElementById('service').value;
+            const budget = document.getElementById('budget').value;
+            const message = document.getElementById('message').value;
 
-            // Show success message
-            const btn = this.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<i class="bi bi-check-circle me-2"></i> Message Sent!';
-            btn.disabled = true;
+            let text = '✉️ *New message from website*\n\n';
+            text += '👤 *Name:* ' + firstName + ' ' + lastName + '\n';
+            text += '📧 *Email:* ' + email + '\n';
+            if (phone) text += '📱 *Phone:* ' + phone + '\n';
+            if (company) text += '🏢 *Company:* ' + company + '\n';
+            if (service) text += '⚙️ *Service:* ' + service + '\n';
+            if (budget) text += '💰 *Budget:* ' + budget + '\n';
+            text += '\n📝 *Message:*\n' + message;
 
-            setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.disabled = false;
-                this.reset();
-            }, 3000);
-        });
+            var url = 'https://wa.me/966569637690?text=' + encodeURIComponent(text);
+            var link = document.createElement('a');
+            link.href = url;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
     </script>
 </body>
 </html>

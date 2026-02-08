@@ -52,9 +52,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">من نحن</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="portfolio.html">أعمالنا</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link active" href="contact.html">تواصل معنا</a>
                     </li>
@@ -126,66 +126,53 @@
                         <h3>أرسل لنا رسالة</h3>
                         <p class="text-muted mb-4">املأ النموذج أدناه وسنتواصل معك خلال 24 ساعة.</p>
 
-                        <form id="contactForm">
+                        <form id="contactForm" onsubmit="sendToWhatsApp(event)">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="firstName" placeholder="الاسم الأول" required>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="الاسم الأول" required>
                                         <label for="firstName">الاسم الأول *</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="lastName" placeholder="الاسم الأخير" required>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="الاسم الأخير" required>
                                         <label for="lastName">الاسم الأخير *</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="البريد الإلكتروني" required>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="البريد الإلكتروني" required>
                                         <label for="email">البريد الإلكتروني *</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="tel" class="form-control" id="phone" placeholder="رقم الهاتف">
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="رقم الهاتف">
                                         <label for="phone">رقم الهاتف</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="company" placeholder="اسم الشركة">
+                                        <input type="text" class="form-control" id="company" name="company" placeholder="اسم الشركة">
                                         <label for="company">اسم الشركة</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <select class="form-select" id="service">
-                                            <option value="" selected>اختر خدمة</option>
-                                            <option value="custom-software">تطوير برمجيات مخصصة</option>
-                                            <option value="mobile-apps">تطوير تطبيقات الجوال</option>
-                                            <option value="cloud">الحلول السحابية</option>
-                                            <option value="digital-transformation">التحول الرقمي</option>
-                                            <option value="other">أخرى</option>
-                                        </select>
+                                        <input type="text" class="form-control" id="service" name="service" placeholder="الخدمة المطلوبة">
                                         <label for="service">الخدمة المطلوبة</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <select class="form-select" id="budget">
-                                            <option value="" selected>اختر نطاق الميزانية</option>
-                                            <option value="10k-25k">$10,000 - $25,000</option>
-                                            <option value="25k-50k">$25,000 - $50,000</option>
-                                            <option value="50k-100k">$50,000 - $100,000</option>
-                                            <option value="100k+">أكثر من $100,000</option>
-                                        </select>
-                                        <label for="budget">ميزانية المشروع (دولار)</label>
+                                        <input type="text" class="form-control" id="budget" name="budget" placeholder="الميزانية">
+                                        <label for="budget">ميزانية المشروع</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" id="message" placeholder="الرسالة" style="height: 150px" required></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="الرسالة" style="height: 150px" required></textarea>
                                         <label for="message">أخبرنا عن مشروعك *</label>
                                     </div>
                                 </div>
@@ -215,13 +202,13 @@
                         </a>
 
                         <!-- Email -->
-                        <a href="mailto:info@softscope.ae" class="contact-card-premium">
+                        <a href="mailto:softscop6@gmail.com" class="contact-card-premium">
                             <div class="contact-card-icon">
                                 <i class="bi bi-envelope"></i>
                             </div>
                             <div class="contact-card-content">
                                 <h5>البريد الإلكتروني</h5>
-                                <p>info@softscope.ae</p>
+                                <p>softscop6@gmail.com</p>
                             </div>
                             <i class="bi bi-arrow-left contact-card-arrow"></i>
                         </a>
@@ -238,16 +225,7 @@
                             <i class="bi bi-arrow-left contact-card-arrow"></i>
                         </a>
 
-                        <!-- Location -->
-                        <div class="contact-card-premium contact-location">
-                            <div class="contact-card-icon">
-                                <i class="bi bi-geo-alt"></i>
-                            </div>
-                            <div class="contact-card-content">
-                                <h5>زر مكتبنا</h5>
-                                <p>الخليج التجاري، دبي<br>الإمارات العربية المتحدة</p>
-                            </div>
-                        </div>
+                        <!-- Location removed -->
 
                         <!-- Working Hours -->
                         <div class="working-hours-card">
@@ -411,7 +389,7 @@
                             <li><a href="index.html">الرئيسية</a></li>
                             <li><a href="services.html">خدماتنا</a></li>
                             <li><a href="about.html">من نحن</a></li>
-                            <li><a href="portfolio.html">أعمالنا</a></li>
+                            <!-- <li><a href="portfolio.html">أعمالنا</a></li> -->
                             <li><a href="contact.html">تواصل معنا</a></li>
                         </ul>
                     </div>
@@ -419,22 +397,20 @@
                     <div class="col-6 col-lg-2">
                         <h6 class="footer-title">الخدمات</h6>
                         <ul class="footer-links">
-                            <li><a href="services.html">البرمجيات المخصصة</a></li>
+                            <li><a href="services.html">تطوير المواقع</a></li>
                             <li><a href="services.html">تطبيقات الجوال</a></li>
-                            <li><a href="services.html">الحلول السحابية</a></li>
-                            <li><a href="services.html">الاستشارات</a></li>
+                            <li><a href="services.html">التصميم الجرافيكي</a></li>
+                            <li><a href="services.html">تصميم UI/UX</a></li>
+                            <li><a href="services.html">الهوية التجارية</a></li>
+                            <li><a href="services.html">الموشن</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4">
                         <h6 class="footer-title">تواصل معنا</h6>
                         <div class="footer-contact-item">
-                            <i class="bi bi-geo-alt"></i>
-                            <span>الخليج التجاري، دبي<br>الإمارات العربية المتحدة</span>
-                        </div>
-                        <div class="footer-contact-item">
                             <i class="bi bi-envelope"></i>
-                            <a href="mailto:info@softscope.ae">info@softscope.ae</a>
+                            <a href="mailto:softscop6@gmail.com">softscop6@gmail.com</a>
                         </div>
                         <div class="footer-contact-item">
                             <i class="bi bi-telephone"></i>
@@ -519,22 +495,36 @@
             });
         });
 
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        // Send form data to WhatsApp
+        function sendToWhatsApp(e) {
             e.preventDefault();
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const company = document.getElementById('company').value;
+            const service = document.getElementById('service').value;
+            const budget = document.getElementById('budget').value;
+            const message = document.getElementById('message').value;
 
-            // Show success message
-            const btn = this.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<i class="bi bi-check-circle me-2"></i> تم الإرسال!';
-            btn.disabled = true;
+            let text = '✉️ *رسالة جديدة من الموقع*\n\n';
+            text += '👤 *الاسم:* ' + firstName + ' ' + lastName + '\n';
+            text += '📧 *الإيميل:* ' + email + '\n';
+            if (phone) text += '📱 *الهاتف:* ' + phone + '\n';
+            if (company) text += '🏢 *الشركة:* ' + company + '\n';
+            if (service) text += '⚙️ *الخدمة:* ' + service + '\n';
+            if (budget) text += '💰 *الميزانية:* ' + budget + '\n';
+            text += '\n📝 *الرسالة:*\n' + message;
 
-            setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.disabled = false;
-                this.reset();
-            }, 3000);
-        });
+            var url = 'https://wa.me/966569637690?text=' + encodeURIComponent(text);
+            var link = document.createElement('a');
+            link.href = url;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
     </script>
 </body>
 </html>
